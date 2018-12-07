@@ -1,0 +1,7 @@
+#Train Policy
+
+python -m spinup.run ppo --exp_name Walker36 --env Walker2d-v2 --hid "[32,32]" --max_ep_len 5000 --epochs 1000 --gamma 0.999 --lam 0.97 --pi_lr  0.0005 --clip_ratio 0.1 --target_kl 0.05 --seed 0 --data_dir /Users/path --dt
+
+#Test Policy
+
+python - spintup.run test_policy /Users/path
